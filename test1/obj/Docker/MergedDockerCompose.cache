@@ -1,0 +1,16 @@
+name: dockercompose2650456190212222377
+services:
+  test1:
+    build:
+      context: C:\Users\Aleksandar\source\repos\test1\test1
+      dockerfile: Dockerfile
+    image: test1
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 80
+        protocol: tcp
+networks:
+  default:
+    name: dockercompose2650456190212222377_default
